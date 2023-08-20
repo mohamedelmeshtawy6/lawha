@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+import 'package:lawha/core/app_router.dart';
 import 'package:lawha/core/styles.dart';
 
 class SignupScreen extends StatelessWidget {
-   // ignore: prefer_const_constructors_in_immutables
-   SignupScreen({super.key});
+  // ignore: prefer_const_constructors_in_immutables
+  SignupScreen({super.key});
 
-  late final String? mail;
-  late final String? pass;
+  String? mail;
+  String? pass;
   static final GlobalKey<FormState> _form = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,7 @@ class SignupScreen extends StatelessWidget {
             height: 10.h,
           ),
           Container(
-            height: 548.h,
+            height: 580.h,
             width: double.infinity,
             decoration: const BoxDecoration(
                 color: Color.fromARGB(255, 23, 35, 61),
@@ -146,7 +147,7 @@ class SignupScreen extends StatelessWidget {
                         hintText: '*************'),
                   ),
                   SizedBox(
-                    height: 20.h,
+                    height: 18.h,
                   ),
                   SizedBox(
                       width: 150.w,

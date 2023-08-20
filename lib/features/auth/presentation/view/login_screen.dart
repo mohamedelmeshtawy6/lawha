@@ -30,7 +30,7 @@ class LoginScreen extends StatelessWidget {
               height: 30.h,
             ),
             Container(
-              height: 494.h,
+              height: 500.h,
               width: double.infinity,
               decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 23, 35, 61),

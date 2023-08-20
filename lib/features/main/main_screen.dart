@@ -8,7 +8,7 @@ class MainScreen extends StatelessWidget {
     return const Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [Text('mo')],
+        children: [Center(child: Text('Still working in this page '))],
       ),
     );
   }

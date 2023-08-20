@@ -15,7 +15,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   void initState() {
     super.initState();
 
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 4), () {
       GoRouter.of(context).pushReplacement(AppRouter.loginscreen);
     });
   }
@@ -41,7 +41,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             margin: const EdgeInsets.symmetric(horizontal: 30),
             decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 212, 162, 162),
+                color: Color.fromARGB(125, 138, 31, 120),
                 borderRadius: BorderRadius.circular(20)),
             child: const Center(
                 child: Column(
@@ -49,7 +49,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 Text(
                   'the first application specialized in offers buying  ',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontSize: 14,
                   ),
                 ),
@@ -84,8 +84,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           SizedBox(
             height: 20.h,
           ),
-          const CircularProgressIndicator(
-            color: Colors.green,
+          const Text(
+            'Powered by GP',
+            style: TextStyle(
+                fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ],
       ),
