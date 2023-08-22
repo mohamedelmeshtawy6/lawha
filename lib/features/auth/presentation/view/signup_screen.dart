@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:lawha/core/app_router.dart';
 import 'package:lawha/core/styles.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -129,6 +128,7 @@ class SignupScreen extends StatelessWidget {
                     onSaved: (value) {
                       pass = value!;
                     },
+                  
                     validator: (value) {
                       if (value!.isEmpty) {
                         return 'please enter your password';

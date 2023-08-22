@@ -41,7 +41,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             margin: const EdgeInsets.symmetric(horizontal: 30),
             decoration: BoxDecoration(
-                color: Color.fromARGB(125, 138, 31, 120),
+                color: const Color.fromARGB(125, 138, 31, 120),
                 borderRadius: BorderRadius.circular(20)),
             child: const Center(
                 child: Column(
